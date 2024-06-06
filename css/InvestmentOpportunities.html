@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/respons.css">
+    <title>عقارات الرياض</title>
+
+
+</head>
+
+<body class="operation ">
+    <!--Start In Nav Bar Section-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-2">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="image/logo.png" alt="عقارات الرياض">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">الملف الشخصي</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="owener.html">الملاك والكيانات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./serves.html">خدماتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">تواصل معنا</a>
+                    </li>
+
+
+                </ul>
+                <div class="row d-block log_register me-lg-4" role="search">
+                    <button class="btn btn-login mb-2" type="submit">تسجيل الدخول</button>
+                    <button class="btn btn-register" type="submit">انشاء حساب جديد</button>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--End In Nav Bar Section-->
+    <div class="line"></div>
+    <!--Start In Owner Section-->
+    <section class="serves owner ">
+        <div class="container">
+            <div class="row mb-3 justify-content-between">
+                <div class="search col-lg-4 col-md-5">
+                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                        placeholder="بحث عن عملاء الكيانات ....">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="dropdown_filter filter col-lg-4 col-md-5">
+                    <button class="btn btn_drop ms-2" onclick="toggleDropdown()">
+                        <img src="image/Vector 32.png" class="filter-img">
+                        تصنيف
+                    </button>
+                    <div class="drop_choices mt-2">
+                        <div class="filter_box">
+                            <div class="row">
+                                <i onclick="toggleDropdown()" class="fa-solid fa-backward"></i>
+                                <div class="search mobile_w col-lg-3 col-md-3 mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">
+                                        المساحة
+                                    </label>
+                                    <input type="number" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="من">
+                                </div>
+                                <div class="search mobile_w col-lg-3 col-md-3 mb-3 ">
+                                    <!-- <label for="exampleFormControlTextarea1" class="form-label"> -->
+                                    <!--  -->
+                                    <!-- </label> -->
+                                    <input type="number" class="form-control from_to pe-3" id="exampleFormControlInput1"
+                                        placeholder="الي">
+                                </div>
+                                <div class=" mobile_w col-lg-3 col-md-3 row mb-lg-3 mb-md-3 dropdown_small">
+                                    <div class="search col-lg-12 col-md-11 mb-3">
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" id="petDropdownButton" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                الفئة
+                                                <i class="fa-solid fa-caret-down me-md-2"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="petDropdownButton">
+                                                <li>
+                                                    <p class="dropdown-item" onclick="selectOption('كلب', 'pet')">الحي ال4</p>
+                                                </li>
+                                                <li>
+                                                    <p class="dropdown-item" onclick="selectOption('قطة', 'pet')">الحي ال5</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mobile_w col-lg-3 col-md-3 row mb-lg-3 mb-md-3 dropdown_small">
+                                    <div class="search col-lg-12 col-md-11 mb-3">
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" id="petDropdownButton" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                الحي
+                                                <i class="fa-solid fa-caret-down me-md-2"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="petDropdownButton">
+                                                <li>
+                                                    <p class="dropdown-item" onclick="selectOption('كلب', 'pet')">الحي ال4</p>
+                                                </li>
+                                                <li>
+                                                    <p class="dropdown-item" onclick="selectOption('قطة', 'pet')">الحي ال5</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mobile_w search col-lg-3 col-md-3 mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">
+                                        السعر
+                                    </label>
+                                    <input type="number" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="من">
+                                </div>
+                                <div class="mobile_w search col-lg-3 col-md-3 mb-3 ">
+                                    <!-- <label for="exampleFormControlTextarea1" class="form-label"> -->
+                                    <!--  -->
+                                    <!-- </label> -->
+                                    <input type="number" class="form-control from_to pe-3" id="exampleFormControlInput1"
+                                        placeholder="الي">
+                                </div>
+                                <div class="col-lg-5 col-md-4 row mb-3 dropdown_small">
+                                    <div class="search col-lg-12 col-md-11 mb-3">
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" id="petDropdownButton" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                عدد الشوارع
+                                                <i class="fa-solid fa-caret-down me-md-2"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="petDropdownButton">
+                                                <li>
+                                                    <p class="dropdown-item" onclick="selectOption('كلب', 'pet')">الحي ال4</p>
+                                                </li>
+                                                <li>
+                                                    <p class="dropdown-item" onclick="selectOption('قطة', 'pet')">الحي ال5</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mobile_w search col-lg-3 col-md-3 mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">
+                                        عدد الملاك
+                                    </label>
+                                    <input type="number" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="عدد الملاك">
+                                </div>
+                                <div class="mobile_w search col-lg-4 col-md-4 mb-3 ">
+                                    <label for="exampleFormControlTextarea1" class="form-label">
+                                    اسم المستخدم
+                                    </label>
+                                    <div class="search col-lg-12 col-md-11 mb-3 user">
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" id="petDropdownButton" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                 اسم المستخدم
+                                                <i class="fa-solid fa-caret-down me-md-2"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="petDropdownButton">
+                                                <li>
+                                                    <p class="dropdown-item" onclick="selectOption('كلب', 'pet')">الحي ال4</p>
+                                                </li>
+                                                <li>
+                                                    <p class="dropdown-item" onclick="selectOption('قطة', 'pet')">الحي ال5</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-5 row">
+                                    <div class="form-check col-6">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-label" for="flexCheckDefault">
+                                          معروضة 
+                                        </label>
+                                      </div>
+                                      <div class="form-check col-6">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-label" for="flexCheckChecked">
+                                          مطلوبة 
+                                        </label>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-2">
+                                    <button class="btn btn-search ">
+                                        بحث
+                                    </button>
+                                </div>
+                                <div class="col-3 search_btn serch1">
+                                    <button class="btn btn-search ">
+                                        اعادة تعيين
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <button class="btn drop_choice ms-2" onclick="selectChoice(this)"> -->
+                            <!-- أراضٍ مطلوبة -->
+                        <!-- </button> -->
+                        <!-- <button class="btn drop_choice ms-2" onclick="selectChoice(this)"> -->
+                            <!-- الحي -->
+                        <!-- </button> -->
+                        <!-- <button class="btn drop_choice ms-2" onclick="selectChoice(this)"> -->
+                            <!-- المساحة -->
+                        <!-- </button> -->
+                        <!-- <button class="btn drop_choice ms-2" onclick="selectChoice(this)"> -->
+                            <!-- النطاق -->
+                        <!-- </button> -->
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3 house_card">
+                <h5 class="text-center mb-5 most_investment_title">
+                    الفرص الاعلى استثماريًا...
+                </h5>
+                <div class="col-lg-4 col-md-4 d-flex justify-content-center mb-3 ">
+                    <div class="card">
+                        <div class="house_img">
+                            <img src="/image/card.png" alt="">
+                        </div>
+                        <div class="house_description">
+                            <h6 class="">
+                                متطابق بنسبة 80%
+                            </h6>
+                            <h5>
+                                فيلا
+                            </h5>
+                            <p>1000,000 ريال سعودي</p>
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+                                11شارع الياسمين بحي الياسمين بمدينة الرياض
+                            </p>
+                            <div class="row mb-2">
+                                    <div class="width mb-1">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        <span> 
+                                            50م
+                                        </span>
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="length mb-1 ms-1">
+                                            <i class="fa-solid fa-arrow-up"></i>
+                                            <span> 
+                                            50م
+                                            </span>
+                                            <i class="fa-solid fa-arrow-down"></i>   
+                                        </div>
+                                        <div class="squer">
+                                            <img src="image/Vector 42.png" alt="">
+                                        </div>
+                                        <p class="me-3 mt-3">
+                                            500 متر مربع
+                                        </p>
+                                    </div>
+                                </div>
+
+                            <a href="" class="text-center">مزيد من التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 d-flex justify-content-center mb-3  ">
+                    <div class="card">
+                        <div class="house_img">
+                            <img src="/image/card.png" alt="">
+                        </div>
+                        <div class="house_description">
+                            <h6 class="">
+                                متطابق بنسبة 80%
+                            </h6>
+                            <h5>
+                                فيلا
+                            </h5>
+                            <p>1000,000 ريال سعودي</p>
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+                                11شارع الياسمين بحي الياسمين بمدينة الرياض
+                            </p>
+                            <div class="row mb-2">
+                                    <div class="width mb-1">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        <span> 
+                                            50م
+                                        </span>
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="length mb-1 ms-1">
+                                            <i class="fa-solid fa-arrow-up"></i>
+                                            <span> 
+                                            50م
+                                            </span>
+                                            <i class="fa-solid fa-arrow-down"></i>   
+                                        </div>
+                                        <div class="squer">
+                                            <img src="image/Vector 42.png" alt="">
+                                        </div>
+                                        <p class="me-3 mt-3">
+                                            500 متر مربع
+                                        </p>
+                                    </div>
+                                </div>
+
+                            <a href="" class="text-center">مزيد من التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 d-flex justify-content-center mb-3 ">
+                    <div class="card">
+                        <div class="house_img">
+                            <img src="/image/card.png" alt="">
+                        </div>
+                        <div class="house_description">
+                            <h6 class="">
+                                متطابق بنسبة 80%
+                            </h6>
+                            <h5>
+                                فيلا
+                            </h5>
+                            <p>1000,000 ريال سعودي</p>
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+                                11شارع الياسمين بحي الياسمين بمدينة الرياض
+                            </p>
+                            <div class="row mb-2">
+                                    <div class="width mb-1">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        <span> 
+                                            50م
+                                        </span>
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="length mb-1 ms-1">
+                                            <i class="fa-solid fa-arrow-up"></i>
+                                            <span> 
+                                            50م
+                                            </span>
+                                            <i class="fa-solid fa-arrow-down"></i>   
+                                        </div>
+                                        <div class="squer">
+                                            <img src="image/Vector 42.png" alt="">
+                                        </div>
+                                        <p class="me-3 mt-3">
+                                            500 متر مربع
+                                        </p>
+                                    </div>
+                                </div>
+
+                            <a href="" class="text-center">مزيد من التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 d-flex justify-content-center mb-3  ">
+                    <div class="card">
+                        <div class="house_img">
+                            <img src="/image/card.png" alt="">
+                        </div>
+                        <div class="house_description">
+                            <h6 class="">
+                                متطابق بنسبة 80%
+                            </h6>
+                            <h5>
+                                فيلا
+                            </h5>
+                            <p>1000,000 ريال سعودي</p>
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+                                11شارع الياسمين بحي الياسمين بمدينة الرياض
+                            </p>
+                            <div class="row mb-2">
+                                    <div class="width mb-1">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        <span> 
+                                            50م
+                                        </span>
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="length mb-1 ms-1">
+                                            <i class="fa-solid fa-arrow-up"></i>
+                                            <span> 
+                                            50م
+                                            </span>
+                                            <i class="fa-solid fa-arrow-down"></i>   
+                                        </div>
+                                        <div class="squer">
+                                            <img src="image/Vector 42.png" alt="">
+                                        </div>
+                                        <p class="me-3 mt-3">
+                                            500 متر مربع
+                                        </p>
+                                    </div>
+                                </div>
+
+                            <a href="" class="text-center">مزيد من التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 d-flex justify-content-center mb-3  ">
+                    <div class="card">
+                        <div class="house_img">
+                            <img src="/image/card.png" alt="">
+                        </div>
+                        <div class="house_description">
+                            <h6 class="">
+                                متطابق بنسبة 80%
+                            </h6>
+                            <h5>
+                                فيلا
+                            </h5>
+                            <p>1000,000 ريال سعودي</p>
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+                                11شارع الياسمين بحي الياسمين بمدينة الرياض
+                            </p>
+                            <div class="row mb-2">
+                                    <div class="width mb-1">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        <span> 
+                                            50م
+                                        </span>
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="length mb-1 ms-1">
+                                            <i class="fa-solid fa-arrow-up"></i>
+                                            <span> 
+                                            50م
+                                            </span>
+                                            <i class="fa-solid fa-arrow-down"></i>   
+                                        </div>
+                                        <div class="squer">
+                                            <img src="image/Vector 42.png" alt="">
+                                        </div>
+                                        <p class="me-3 mt-3">
+                                            500 متر مربع
+                                        </p>
+                                    </div>
+                                </div>
+
+                            <a href="" class="text-center">مزيد من التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 d-flex justify-content-center mb-3  ">
+                    <div class="card">
+                        <div class="house_img">
+                            <img src="/image/card.png" alt="">
+                        </div>
+                        <div class="house_description">
+                            <h6 class="">
+                                متطابق بنسبة 80%
+                            </h6>
+                            <h5>
+                                فيلا
+                            </h5>
+                            <p>1000,000 ريال سعودي</p>
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+                                11شارع الياسمين بحي الياسمين بمدينة الرياض
+                            </p>
+                            <div class="row mb-2">
+                                    <div class="width mb-1">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        <span> 
+                                            50م
+                                        </span>
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="length mb-1 ms-1">
+                                            <i class="fa-solid fa-arrow-up"></i>
+                                            <span> 
+                                            50م
+                                            </span>
+                                            <i class="fa-solid fa-arrow-down"></i>   
+                                        </div>
+                                        <div class="squer">
+                                            <img src="image/Vector 42.png" alt="">
+                                        </div>
+                                        <p class="me-3 mt-3">
+                                            500 متر مربع
+                                        </p>
+                                    </div>
+                                </div>
+
+                            <a href="" class="text-center">مزيد من التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--End In Owner Section-->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="Js/wow.min.js"></script>
+    <script src="Js/popper.min.js"></script>
+    <script src="Js/bootstrap.min.js"></script>
+    <script src="Js/main.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        function toggleDropdown() {
+            const dropdownFilter = document.querySelector('.dropdown_filter');
+            const dropChoices = dropdownFilter.querySelector('.drop_choices');
+        
+            // Toggle the 'open' class on the dropdown_filter
+            dropdownFilter.classList.toggle('open');
+        
+            // If the dropdown is open, create and append the dropdown button
+            if (dropdownFilter.classList.contains('open')) {
+                const btnDrop = document.createElement('button');
+                btnDrop.classList.add('btn', 'btn_drop', 'ms-2');
+                btnDrop.innerHTML = `
+                    <img src="image/Vector 32.png" class="filter-img">
+                    تصنيف
+                `;
+                btnDrop.onclick = toggleDropdown; // Close dropdown when this button is clicked
+                dropChoices.insertBefore(btnDrop, dropChoices.firstChild);
+            } else {
+                // If the dropdown is closed, remove the dynamically created dropdown button
+                dropChoices.removeChild(dropChoices.firstChild);
+            }
+        }
+        
+        function selectChoice(choice) {
+            const btnDrop = choice.closest('.dropdown_filter').querySelector('.btn_drop');
+            btnDrop.innerHTML = `
+                <img src="image/Vector 32.png" class="filter-img">
+                ${choice.textContent.trim()}
+            `;
+            toggleDropdown(); // Close the dropdown after selecting a choice
+        }
+        
+        
+            </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/respons.css">
+
+    <title>عقارات الرياض</title>
+
+</head>
+
+<body class="servies">
+    <!--Start In Nav Bar Section-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-2">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="image/logo.png" alt="عقارات الرياض">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">الملف الشخصي</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="owener.html">الملاك والكيانات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./serves.html">خدماتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">تواصل معنا</a>
+                    </li>
+                </ul>
+                <div class="row d-block log_register me-lg-4 me-md-4" role="search">
+                    <button class="btn btn-login mb-2" type="submit">تسجيل الدخول</button>
+                    <button class="btn btn-register" type="submit">انشاء حساب جديد</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--End In Nav Bar Section-->
+    <div class="line"></div>
+    <!--Start In serves Section-->
+    <section class="serves add_owner">
+        <div class="container_handel row">
+            <div class="row ">
+                <div class="col-lg-2 col-md-3">
+                    <div class="profile_side">
+                        <div class="owner_photo">
+                            <img src="image/Rectangle 29.png" alt="">
+                        </div>
+                        <p>جمال بن عبدالسميع</p>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-9">
+                    <div class="row justify-content-end mb-3">
+                        <div class="dropdown_filter dropdown_filter1"> <!-- Assign a unique class name -->
+                            <button class="btn btn_drop ms-2" onclick="toggleDropdown('.dropdown_filter1')"> <!-- Pass the class name as an argument -->
+                                <img src="image/Vector 32.png" class="filter-img">
+                                تصنيف
+                            </button>
+                            <div class="drop_choices mt-2">
+                                <button class="btn drop_choice ms-2" onclick="selectChoice('.dropdown_filter1', this)"> <!-- Pass the class name as an argument -->
+                                    عرض الكل
+                                </button>
+                                <button class="btn drop_choice ms-2" onclick="selectChoice('.dropdown_filter1', this)"> <!-- Pass the class name as an argument -->
+                                    الافراد
+                                </button>
+                                <button class="btn drop_choice ms-2" onclick="selectChoice('.dropdown_filter1', this)"> <!-- Pass the class name as an argument -->
+                                    الشركة
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row deteils_buy">
+                        <div class="col-lg-3 col-md-6 mb-3">
+                            <div class="rate">
+                                <h5>الملاك المضافين ماخرا</h5>
+                                <i class="fa-solid fa-arrow-trend-down"></i>
+                                <span>10</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-3">
+                            <div class="rate">
+                                <h5>الفرص الاستثمارية المكتملة</h5>
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+                                <span>1500</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-3">
+                            <div class="rate">
+                                <h5>عدد الاراضي المعروضة</h5>
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+                                <span>2000</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-3">
+                            <div class="rate">
+                                <h5>عدد الاراضي المعروضة</h5>
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+                                <span>1000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-4">
+                        <div class="chart">
+                            <div class="row mt-2">
+                                <!-- Removed duplicate dropdown_filter class -->
+                                <div class="dropdown_filter2 dropdown_filter">
+                                    <button class="btn btn_drop btn_drop1 ms-2" onclick="toggleDropdown('.dropdown_filter2')"> <!-- Pass the class name as an argument -->
+                                        <!-- <img src="image/Vector 32.png" class="filter-img"> -->
+                                        تصنيف بواسطة الملاك
+                                    </button>
+                                    <div class="drop_choices mt-2">
+                                        <button class="btn drop_choice ms-2" onclick="selectChoice('.dropdown_filter2', this)"> <!-- Pass the class name as an argument -->
+                                            عرض الكل
+                                        </button>
+                                        <button class="btn drop_choice ms-2" onclick="selectChoice('.dropdown_filter2', this)"> <!-- Pass the class name as an argument -->
+                                            الافراد
+                                        </button>
+                                        <button class="btn drop_choice ms-2" onclick="selectChoice('.dropdown_filter2', this)"> <!-- Pass the class name as an argument -->
+                                            الشركة
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="donutchart" ></div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            
+
+ 
+        </div>
+    </section>
+    <!--End In serves Section-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="Js/wow.min.js"></script>
+    <script src="Js/popper.min.js"></script>
+    <script src="Js/bootstrap.min.js"></script>
+    <script src="Js/main.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        function toggleDropdown(dropdownClass) {
+            const dropdownFilter = document.querySelector(dropdownClass);
+            dropdownFilter.classList.toggle('open');
+        }
+
+        function selectChoice(dropdownClass, choice) {
+            const dropdownFilter = document.querySelector(dropdownClass);
+            const btnDrop = dropdownFilter.querySelector('.btn_drop');
+            btnDrop.textContent = choice.textContent.trim();
+            dropdownFilter.classList.remove('open');
+        }
+    </script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", {packages:["corechart"]});
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                [' الملاك المضافين', 11],
+                ['الاراضي المطلوبة', 2],
+                ['الاراضي المعروضة', 2],
+                ['الفرص الاستثمارية', 2],
+            //   ['Sleep', 7]
+            ]);
+
+            var options = {
+                title: null,
+                pieHole: 0.4,
+                backgroundColor: 'transparent',
+                sliceTextStyle: { color: '#fff', fontSize: 16 }, // Set slice font color and size
+                titleTextStyle: { opacity: '0', fontSize: 0 }, // Set title font color and size
+                legendTextStyle: { color: '#fff', fontSize: 20, fontWeight: 500 } // Set legend font color and size
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+            chart.draw(data, { ...options, 'chartArea': {'width': '70%', 'height': '90%'}, 'width': '90%', 'height': '90%'});
+        } 
+    </script>
+</body>
+
+</html>

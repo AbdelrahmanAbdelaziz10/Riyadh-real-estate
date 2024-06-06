@@ -1,0 +1,1409 @@
+.show {
+    position: relative !important;
+    z-index: 111 !important;
+
+}
+
+@media (min-width: 820px) and (max-width: 992px) {
+
+    /*==== start the response of home section ====*/
+    /*== navbar==*/
+    .navbar {
+        position: relative;
+        z-index: 1111;
+    }
+
+    .navbar .navbar-brand {
+        width: 27%;
+    }
+
+    .navbar-toggler {
+        background-color: #fff;
+    }
+
+    .navbar-toggler-icon {
+        color: #008080 !important;
+    }
+
+    .navbar .nav-item .active::after {
+        width: 0;
+        right: 2px;
+    }
+
+    .navbar .nav-item .nav-link:hover::after {
+        width: 0;
+        right: 2px;
+    }
+
+    .navbar .btn-register {
+        width: 25%;
+    }
+
+    .navbar .btn-login {
+        width: 25%;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    /*== Header==*/
+    .header_content h1 {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .header_content p {
+        text-align: right !important;
+        padding-bottom: 0rem;
+    }
+
+    .header_img {
+        margin-top: 4rem;
+        width: 100%;
+        height: 65%;
+        animation-name: zome;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        transition: all 2s;
+    }
+
+    /*== rating==*/
+    .range .rang_row {
+        margin: 0 1.5rem;
+    }
+
+    .progress-bar span {
+        font-size: 1.3rem;
+    }
+
+    .range .rang_row .range_deteils .respons{
+        font-size: .8rem !important;
+    }
+
+    /*== owner==*/
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+        top: 11.5rem !important;
+    }
+
+    .serves h4 {
+        color: #fff;
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .owneer .owner_slider .owner_card p {
+        font-size: 1.1rem;
+    }
+
+    /*== serves==*/
+    .serves .serves_num p a {
+        margin-right: 4.5rem;
+    }
+
+    /*==== End the response of home section ====*/
+    /*==== start the response of serves Page  ====*/
+    .servies .serves {
+        min-height: 89vh !important;
+    }
+
+    /*========= Start in Owner Page Style =========*/
+    .owner {
+        min-height: 100vh;
+    }
+
+    .owner .owner_row {
+        margin-top: 3rem;
+    }
+
+    .owner .owner_card {
+        width: 25% !important;
+    }
+
+    .owner .owner_row .owner_card p {
+        color: #fff;
+        font-weight: 500;
+        font-size: 1.1rem;
+        margin-right: 0 !important;
+    }
+
+    .owner .form-control {
+        border-radius: 24px;
+        position: relative;
+        padding-right: 2.7rem;
+        height: 4vh;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .owner .form-control::placeholder {
+        font-size: 1.2rem;
+    }
+
+    .owner .fa-magnifying-glass {
+        right: 4.5rem;
+        top: 9rem;
+    }
+
+    /*========= End in Owner Page Style =========*/
+    /*========= Start in Add Address Page Style =========*/
+    .address {
+        min-height: 85vh;
+    }
+
+    .address .profile_head .profile_img {
+        width: 90%;
+    }
+
+    .address .profile_head p {
+        font-size: 1rem;
+        text-align: right;
+    }
+
+    .address .form-label {
+        margin-right: 1rem;
+        margin-bottom: .7rem;
+    }
+
+    .address textarea.form-control {
+        height: 14vh;
+        width: 98%;
+    }
+
+    /*========= End in Add Address Page Style =========*/
+    /*========= Start in Add owner Page Style =========*/
+    .dropdown-menu.show {
+        top: calc(100% - 9.4rem) !important;
+        text-align: right !important;
+        position: relative;
+        right: calc(100% - 9rem) !important;
+    }
+
+    /*========= End in Add owner Page Style =========*/
+    /*========= start in Contact us Page Style =========*/
+    .contact {
+        height: 91.6vh !important;
+        padding-top: 1rem;
+    }
+    .contact .contact_form{
+        margin-top: 11rem;
+    }
+    .contact.forget_password{
+        height: 91.6vh;
+        padding-top: 1rem;
+    }
+
+    .contact .contact_form .form-control {
+        height: 3vh;
+    }
+
+    .contact .contact_form textarea {
+        height: 10vh !important;
+    }
+
+    /*========= End in Contact us Page Style =========*/
+    /*========= start in forget password Page Style =========*/
+    .forget_password .btn {
+        width: 40%;
+    }
+    .forget_password .contact_form {
+        margin-top: 0rem !important;
+    }
+    /*========= End in forget password Page Style =========*/
+    /*========= start in opt Page Style =========*/
+    .opt .form-control {
+        height: 4vh !important;
+
+    }
+.search_house .contact_form{
+    margin-top: 16rem !important;
+}
+    /*========= End in opt Page Style =========*/
+    /*========= Start in login Page Style =========*/
+    .login .contact_form {
+        margin-top: 10rem ;
+    }
+
+    /*========= End in login Page Style =========*/
+    /*========= Start in Add New Owner Page Style =========*/
+    .address .dropdown-toggle {
+        background-color: #fff !important;
+        color: #001f3f !important;
+        width: 60%;
+        border-radius: 15px;
+    }
+
+    .address .dropdown-menu {
+        width: 30%;
+        border-radius: 15px;
+        margin-top: -2.5rem !important;
+        margin-bottom: 1rem !important;
+        margin-right: -7.5rem !important;
+    }
+
+    .address .dropdown-item {
+        margin-bottom: 0;
+    }
+
+    .address .search input.form-control {
+        height: 4vh;
+        font-size: 1.1rem;
+    }
+
+    .address .search input.form-control::placeholder {
+        font-weight: 400;
+    }
+
+    /*========= End in Add New Owner Page Style =========*/
+    /*========= Start in Add house Page Style =========*/
+    .add_house .dropdown-toggle {
+        background-color: #fff !important;
+        color: #1F497D !important;
+        width: 95% !important;
+        border-radius: 15px;
+    }
+
+    .add_house .dropdown-menu.show {
+        right: 7.5rem !important;
+        width: 90% !important;
+    }
+    .add_house .type .col-md-3 {
+        width: 28%;
+    }
+    /*========= End in Add house Page Style =========*/
+    /*========= Start in PropertyDetails Page Style =========*/
+    .owner h5 {
+        margin-right: 0rem;
+    }
+
+    .property .form-label {
+        font-size: .9rem;
+    }
+
+    .city {
+        height: 3vh;
+    }
+
+    .city p {
+        font-size: .9rem;
+    }
+
+    .address .about {
+        background-color: #fff;
+        border-radius: 15px;
+    }
+
+    .house_card .card .house_img {
+        height: 30%;
+    }
+
+    .house_card .card .house_description .squer {
+        width: 60%;
+        height: 5vh;
+    }
+
+    .house_card .card .house_description .width {
+        margin-right: 1.5rem;
+    }
+
+    .house_card .card .house_description .width span {
+        margin: 0 .4rem;
+
+    }
+
+    .house_photo {
+        height: 25vh;
+    }
+
+    .header_div p {
+        font-size: .6rem;
+    }
+
+    .loading-bar {
+        margin-right: 1rem;
+        width: 30%;
+        /* Set the width of the loading bar */
+    }
+    .email{
+        height: 4vh;
+    }
+    /*========= End in PropertyDetails Page Style =========*/
+    .email.number{
+        height: 3vh;
+    }
+    .email.number p{
+        font-size: .9rem;
+    }
+    .file_add {
+        height: 4vh;
+    }
+    #donutchart {
+        margin-right:-4rem !important;
+        width: 140% !important;
+        height: 120% !important;
+        background-color: #001f3f00 !important;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 819px) {
+
+    /*==== start the response of home section ====*/
+    /*== NavBar==*/
+    .navbar {
+        overflow-x: hidden;
+        position: relative;
+        z-index: 1111;
+    }
+
+    .navbar .btn-register {
+        width: 25%;
+    }
+
+    .navbar .btn-login {
+        width: 25%;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .navbar .navbar-brand {
+        margin-right: 0rem !important;
+    }
+
+    .navbar .navbar-brand {
+        width: 30%;
+    }
+
+    .navbar-toggler {
+        background-color: #fff;
+    }
+
+    .navbar-toggler-icon {
+        color: #008080 !important;
+    }
+
+    .navbar .nav-item .active::after {
+        width: 0;
+        right: 2px;
+    }
+
+    .navbar .nav-item .nav-link:hover::after {
+        width: 0;
+        right: 2px;
+    }
+
+    /*== Header==*/
+    .header_content h1 {
+        font-size: 2rem;
+        padding-bottom: .5rem;
+    }
+
+    .header_content p {
+        text-align: right !important;
+        padding-bottom: 0rem;
+    }
+
+    .header_img {
+        margin-top: 4rem;
+        width: 100%;
+        height: 60%;
+        animation-name: zome;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        transition: all 2s;
+    }
+
+    /*== rating==*/
+    .range .rang_row {
+        margin: 0 .5rem;
+    }
+    .range .rang_row .range_deteils .respons{
+        font-size: .8rem !important;
+    }
+    .owner .owner_card p {
+        font-size: 1.1rem;
+    }
+
+    /*== owner==*/
+    .owner .owner_card p {
+        font-size: 1rem;
+    }
+
+    .serves.owneer h4 {
+        font-size: 1.8rem;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+        top: 10rem !important;
+    }
+
+    /*== serves==*/
+
+    .serves h4 {
+        color: #fff;
+        font-size: 1.8rem;
+        padding-bottom: 1rem;
+    }
+
+    .serves .serves_img {
+        width: 75%;
+        margin-bottom: .5rem;
+        margin-right: 1rem;
+    }
+
+    .serves .serves_num p a {
+        margin-right: 4.5rem;
+    }
+
+    /*==== End the response of home section ====*/
+    /*==== start the response of serves Page  ====*/
+    .servies .serves {
+        height: 90vh !important;
+    }
+
+    /*========= Start in Owner Page Style =========*/
+    .owner {
+        min-height: 100vh;
+    }
+
+    .owner .owner_row {
+        margin-top: 3rem;
+    }
+
+    .owner .owner_card {
+        width: 25% !important;
+    }
+
+    .owner .owner_row .owner_card p {
+        color: #fff;
+        font-weight: 500;
+        font-size: 1.1rem;
+        margin-right: 0 !important;
+    }
+
+    .owner .form-control {
+        border-radius: 24px;
+        position: relative;
+        padding-right: 2.7rem;
+        height: 5vh;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .owner .form-control::placeholder {
+        font-size: 1.2rem;
+    }
+
+    .owner .fa-magnifying-glass {
+        right: 3.5rem;
+        top: 9.5rem;
+    }
+
+    /*========= End in Owner Page Style =========*/
+    /*========= Start in Add Address Page Style =========*/
+    .address {
+        min-height: 85vh;
+    }
+
+    .address .profile_head .profile_img {
+        width: 95%;
+    }
+
+    .address .profile_head p {
+        text-align: center;
+    }
+
+    .address .form-label {
+        margin-bottom: .7rem;
+    }
+
+    .address .search input.form-control {
+        width: 100%;
+        color: #1F497D;
+        font-size: 1.1rem !important;
+        padding-top: 0rem;
+        line-height: 1.5rem;
+        padding-right: .8rem;
+    }
+
+    .address textarea.form-control {
+        height: 16vh;
+        width: 100%;
+    }
+
+    /*========= End in Add Address Page Style =========*/
+    /*========= Start in Add owner Page Style =========*/
+    .dropdown-menu.show {
+        top: calc(100% - 9.4rem) !important;
+        text-align: right !important;
+        position: relative;
+        right: calc(100% - 9rem) !important;
+    }
+
+    /*========= End in Add owner Page Style =========*/
+    /*========= Start in Add diagram Page Style =========*/
+    .container_handel .profile_side p {
+        font-size: 1rem;
+    }
+
+    .container_handel .col-lg-2:first-child::after {
+        content: "";
+        background-color: #fff;
+        width: .3vw;
+        height: 90vh;
+        border-radius: 15px;
+        position: absolute;
+        left: 0rem;
+        top: 0;
+    }
+
+    .add_owner .container_handel .rate h5 {
+        font-size: .8rem;
+        margin-bottom: 0rem;
+    }
+
+    /*========= end in Add diagram Page Style =========*/
+    /*========= start in Contact us Page Style =========*/
+    .contact {
+        height: 89.7vh !important;
+        padding-top: 1rem;
+    }
+    .contact .contact_form{
+        margin-top: 7rem;
+    }
+    .contact .contact_form .form-control {
+        height: 4vh;
+    }
+
+    .contact .contact_form textarea {
+        height: 10vh !important;
+    }
+
+    /*========= End in Contact us Page Style =========*/
+    /*========= start in forget password Page Style =========*/
+    .forget_password .btn {
+        width: 40%;
+    }
+    .forget_password .contact_form {
+        margin-top: 0rem !important;
+    }
+    /*========= End in forget password Page Style =========*/
+    /*========= Start in login Page Style =========*/
+    .login .contact_form {
+        margin-top: 10rem !important;
+    }
+
+    .login .col-4 {
+        width: 40% !important;
+    }
+    .search_house {
+        height: 89.7vh;
+    }
+    /*========= End in login Page Style =========*/
+    /*========= Start in Add New Owner Page Style =========*/
+    .address .dropdown-toggle {
+        background-color: #fff !important;
+        color: #001f3f !important;
+        width: 60%;
+        border-radius: 15px;
+    }
+
+    .address .dropdown-menu {
+        width: 30%;
+        border-radius: 15px;
+        margin-top: -2.5rem !important;
+        margin-bottom: 1rem !important;
+        margin-right: -7.5rem !important;
+    }
+
+    .address .dropdown-item {
+        margin-bottom: 0;
+    }
+
+    .address .search input.form-control {
+        height: 4vh;
+        font-size: 1.1rem;
+    }
+
+    .address .search input.form-control::placeholder {
+        font-weight: 400;
+    }
+
+    /*========= End in Add New Owner Page Style =========*/
+    /*========= Start in Add house Page Style =========*/
+    .add_house .dropdown-toggle {
+        background-color: #fff !important;
+        color: #1F497D !important;
+        width: 95% !important;
+        border-radius: 15px;
+    }
+
+    .add_house .dropdown-menu {
+        right: 7.5rem !important;
+        width: 37% !important;
+    }
+    .add_house .type .col-md-3 {
+        width: 28%;
+    }
+    /*========= End in Add house Page Style =========*/
+    /*========= Start in PropertyDetails Page Style =========*/
+    .owner h5 {
+        margin-right: 0rem;
+    }
+
+    .property .form-label {
+        font-size: .9rem;
+    }
+
+    .city {
+        height: 3vh;
+    }
+
+    .city p {
+        font-size: .9rem;
+    }
+
+    .address .about {
+        background-color: #fff;
+        border-radius: 15px;
+    }
+
+    .house_card .card .house_img {
+        height: 20vh;
+    }
+
+    .house_card .card .house_description .squer {
+        width: 60%;
+        height: 5vh;
+    }
+
+    .house_card .card .house_description .width {
+        margin-right: 1.5rem;
+    }
+
+    .house_card .card .house_description .width span {
+        margin: 0 .4rem;
+
+    }
+
+    .house_photo {
+        height: 25vh;
+    }
+
+    .header_div p {
+        font-size: .6rem;
+    }
+
+    .loading-bar {
+        margin-right: 1rem;
+        width: 30%;
+        /* Set the width of the loading bar */
+    }
+
+    /*========= End in PropertyDetails Page Style =========*/
+    .cityy{
+        height: 4vh;
+    }
+    .email{
+        height: 4vh;
+    }
+    .email.number{
+        height: 3vh;
+    }
+    .file_add {
+        height: 4vh;
+    }
+    #donutchart {
+        margin-right:-4rem !important;
+        width: 140% !important;
+        height: 120% !important;
+        background-color: #001f3f00 !important;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /*==== start the response of home section ====*/
+    /*== NavBar==*/
+    .navbar {
+        position: relative;
+        z-index: 1111;
+        overflow-x: hidden;
+    }
+
+    .navbar .btn-register {
+        width: 35%;
+        margin-right: 0 !important;
+    }
+
+    .navbar .btn-login {
+        width: 30%;
+        margin-left: 1rem;
+        margin-right: 1rem !important;
+
+    }
+
+    .navbar .navbar-nav {
+        margin-top: 0rem !important;
+        padding-right: 1rem;
+    }
+
+    .navbar .navbar-brand {
+        width: 48%;
+        margin-right: 0rem;
+    }
+
+    .navbar .btn {
+        margin-right: 3.5rem;
+
+    }
+
+    .navbar-toggler {
+        background-color: #fff;
+    }
+
+    .navbar-toggler-icon {
+        color: #008080 !important;
+    }
+
+    .navbar .nav-item .active::after {
+        width: 0;
+        right: 2px;
+    }
+
+    .navbar .nav-item .nav-link:hover::after {
+        width: 0;
+        right: 2px;
+    }
+
+    /*== Header==*/
+    .header_content h1 {
+        font-size: 1.9rem;
+        padding-bottom: 1rem;
+    }
+
+    .header_content h4 {
+        font-size: 1.6rem;
+        margin-top: 1rem;
+    }
+
+    .header_content p {
+        text-align: right !important;
+        font-size: 1rem;
+        font-weight: 00;
+    }
+
+    .header_img {
+        display: none;
+    }
+
+    /*== range==*/
+    .range .rang_row .range_deteils {
+        margin-bottom: 1.5rem;
+    }
+    /*===owner===*/
+    .swiper-slide {
+        width: 50% !important;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+        top: 11.5rem !important;
+    }
+
+    /*== serves==*/
+    .serves .serves_num {
+        margin-bottom: 1rem;
+    }
+
+    .serves .serves_img {
+        width: 60% !important;
+        margin-bottom: .5rem;
+        margin-right: 4rem;
+    }
+
+    .serves .serves_num p a {
+        margin-right: 7rem;
+    }
+
+    /*==== End the response of home section ====*/
+    /*==== start the response of serves Page  ====*/
+    .servies .serves {
+        min-height: 89vh !important;
+    }
+
+    /*========= Start in Owner Page Style =========*/
+    .owner {
+        min-height: 100vh;
+    }
+
+    .owner .owner_row {
+        margin-top: 3rem;
+        margin-right: .5rem;
+    }
+    .owner .owner_row .owner_card p {
+        font-size: 1.4rem !important;
+    }
+    .owner .owner_card {
+        width: 95% !important;
+    }
+
+    .owner .form-control {
+        border-radius: 24px;
+        position: relative;
+        padding-right: 2.7rem;
+        height: 5.5vh;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .owner .fa-magnifying-glass {
+        right: 2rem;
+        top: 9rem;
+    }
+
+    .owner .owner_row .owner_card p {
+        color: #fff;
+        font-weight: 500;
+        font-size: 1rem;
+        margin-right: 0 !important;
+    }
+
+    /*========= End in Owner Page Style =========*/
+    /*========= Start in Add Address Page Style =========*/
+    .address {
+        min-height: 89vh;
+        overflow: hidden;
+    }
+
+    .profile_header {
+        display: flex;
+        width: 100vw !important;
+    }
+
+    .div_header_img,
+    .div_header_btn {
+        width: 50%;
+    }
+
+    .div_header_btn {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .div_header_btn .div_save {
+        flex: 1;
+        margin: 0 3px;
+    }
+
+    .address .profile_head p {
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: right;
+    }
+
+    .address .form-label {
+        color: #fff;
+        margin-right: 1rem;
+        font-weight: 500;
+        font-size: 1rem;
+        margin-bottom: .7rem;
+    }
+
+    .address .search input.form-control {
+        width: 100%;
+        color: #1F497D;
+        font-size: 1.1rem !important;
+        padding-top: 0rem;
+        line-height: 1.5rem;
+        padding-right: .8rem;
+    }
+
+    .address .search input.form-control::placeholder {
+        font-size: .9rem;
+        padding-top: 0;
+    }
+
+    .address textarea.form-control {
+        height: 17vh;
+        width: 100%;
+        color: #1F497D;
+        font-size: 1.1rem;
+        padding-top: .8rem;
+        line-height: 1.5rem;
+        padding-right: 1rem;
+    }
+
+    .address .btn {
+        color: #fff;
+        font-weight: 500;
+    }
+
+    .address .btn:hover {
+        background-color: #fff;
+        transition: all .5s;
+        color: #008080;
+    }
+
+    .address .btn:disabled {
+        border: none;
+    }
+
+    .address .btn span {
+        color: #1F497D;
+    }
+
+    .add_button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .div_save {
+        width: 15%;
+    }
+
+    .div_delete {
+        width: 20%;
+    }
+
+    /*========= End in Add Address Page Style =========*/
+    /*========= Start in Add owner Page Style =========*/
+    .add_owner .owner_card {
+        width: 65%;
+        margin-right: 4rem;
+    }
+
+    .add_owner h4 {
+        margin-top: 1rem;
+    }
+
+    .dropdown-menu.show {
+        top: calc(100% - 17.5rem) !important;
+        text-align: right !important;
+        position: relative;
+        right: calc(100% - 25.4rem) !important;
+    }
+
+    /*========= End in Add owner Page Style =========*/
+    /*========= Start in Add diagram Page Style =========*/
+    .deteils_buy {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .deteils_buy .col-lg-4 {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .container_handel .col-lg-2:first-child::after {
+        content: "";
+        background-color: #fff;
+        width: 0vw;
+        height: 110vh;
+        border-radius: 15px;
+        position: absolute;
+        left: 0rem;
+        top: 0;
+    }
+
+    .container_handel .profile_side .owner_photo {
+        width: 50%;
+    }
+
+    .container_handel .profile_side p {
+        color: #fff;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .add_owner .container_handel .rate h5 {
+        padding-bottom: 0;
+    }
+
+    .digrame {
+        background-color: #a4b5c0;
+        margin-right: -1.5rem;
+        border-radius: 10px;
+        width: 95vw;
+        height: 50vh;
+    }
+
+    canvas {
+        width: 100% !important;
+        /* Set width to 100% */
+        height: 45vh !important;
+        margin: 0 auto;
+        border-radius: 24px;
+    }
+
+    /*========= end in Add diagram Page Style =========*/
+    /*========= start in Contact us Page Style =========*/
+    .contact {
+        height: 89.2vh !important;
+        padding-top: 1rem;
+    }
+    .contact.register{
+        height: 91vh !important;
+    }
+    .contact .contact_form .form-control {
+        height: 4.5vh;
+    }
+    .contact_text h3 {
+        font-size: 1.8rem;
+    }
+    .contact .contact_form textarea {
+        height: 10vh !important;
+    }
+
+    /*========= End in Contact us Page Style =========*/
+    /*========= start in forget password Page Style =========*/
+    .login .contact_form{
+        margin-top: 8rem;
+    }
+    .forget_password h3 {
+        font-size: 2rem;
+        margin-bottom: 6rem;
+    }
+
+    .forget_password .btn {
+        width: 95%;
+        margin-bottom: -1rem;
+    }
+
+    .forg {
+        margin-right: 0rem !important;
+    }
+
+    .register_link a {
+        margin-right: 0rem;
+    }
+    .search_house {
+        height: 89.2vh;
+    }
+    .search_house .contact_form{
+        margin-top: 9rem;
+    }
+    /*========= End in forget password Page Style =========*/
+    /*========= Start in Add New Owner Page Style =========*/
+    .address .dropdown-toggle {
+        background-color: #fff !important;
+        color: #001f3f !important;
+        width: 40%;
+        border-radius: 15px;
+    }
+
+    .address .dropdown-menu {
+        width: 26%;
+        border-radius: 15px;
+        margin-top: -2.5rem !important;
+        margin-bottom: 1rem !important;
+        margin-right: 2rem !important;
+    }
+
+    .address .dropdown-item {
+        margin-bottom: 0;
+    }
+
+    .address .search input.form-control {
+        height: 4vh;
+        font-size: 1.1rem;
+        color: #fff;
+    }
+
+    .address .search input.form-control::placeholder {
+        font-weight: 400;
+    }
+
+    .fl_name {
+        width: 50% !important;
+    }
+
+    /*========= End in Add New Owner Page Style =========*/
+    /*========= Start in Add house Page Style =========*/
+    .add_house .dropdown_small {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+    }
+
+    .add_house .dropdown-toggle {
+        background-color: #fff !important;
+        color: #1F497D !important;
+        width: 100% !important;
+        border-radius: 15px;
+    }
+
+    .add_house .dropdown-menu {
+        right: -2rem !important;
+        width: 36% !important;
+    }
+
+    .naionality_dropdown .dropdown-toggle {
+        width: 100% !important;
+    }
+
+    .add_house .btn_addhouse {
+        color: #1F497D;
+        margin-right: -4rem;
+    }
+
+    .add_house .btn_addhouse:hover {
+        color: #fff;
+        transition: all .5s;
+        background-color: #001f3f00;
+        border: 2px solid #fff;
+    }
+    .add_house .type2 .search,
+    .add_house .naionality_dropdown{
+        width: 50%;
+    }
+
+    /*========= End in Add house Page Style =========*/
+    /*========= Start in PropertyDetails Page Style =========*/
+    .owner h5 {
+        margin-right: 0rem;
+    }
+
+    .property .form-label {
+        font-size: .9rem;
+    }
+    .house_card .card{
+        margin-right: 1rem;
+    }
+    .address .more{
+        width: 40%;
+    }
+    .city {
+        height: 3vh;
+        width: 96%;
+    }
+
+    .city p {
+        font-size: .9rem;
+    }
+
+    .address .about {
+        background-color: #fff;
+        border-radius: 15px;
+    }
+
+    .house_card .card {
+        margin-bottom: 1rem;
+        width: 90%;
+        
+    }
+
+    .house_card .card .house_img {
+        height: auto;
+    }
+
+    .house_card .card .house_description .squer {
+        width: 30%;
+        height: 6vh;
+    }
+
+    .house_card .card .house_description .width {
+        margin-right: 2.5rem;
+    }
+
+    .house_card .card .house_description .width span {
+        margin: 0 .4rem;
+
+    }
+
+    .house_photo {
+        height: 25vh;
+    }
+
+    .header_div p {
+        font-size: .6rem;
+    }
+
+    .address .about {
+        padding: 0.5rem;
+    }
+
+    .address .about .description {
+        margin-bottom: 0;
+    }
+
+    .owner_information {
+        display: flex;
+        flex-direction: row;
+        width: 45%;
+    }
+
+    .loading-bar {
+        margin-right: 1rem;
+        width: 50%;
+        /* Set the width of the loading bar */
+    }
+
+    /*========= End in PropertyDetails Page Style =========*/
+    /*========= Start in opportunities Page Style =========*/
+    .operation .dropdown_filter.open .drop_choices {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .operation .dropdown_filter.open .drop_choices .drop_choice {
+        flex: 0 0 30%;
+        max-width: 30%;
+        margin-top: .5rem;
+    }
+    .operation .navbar{
+        overflow: hidden;
+    }
+    /*========= End in opportunities Page Style =========*/
+    .owner .city_div{
+        width: 50%;
+    }
+    .cityy{
+        height: 5vh;
+    }
+    .email{
+        height: 5vh;
+    }
+    .email.number{
+        height: 4vh;
+    }
+    .profile{
+        width: 50%;
+    }
+    .file_add {
+        height: 4vh;
+    }
+    .add_photo{
+        width: 50%;
+    }
+    .add_owner{
+        margin-bottom: 2rem;
+    }
+    #donutchart {
+        margin-right:-6rem !important;
+        width: 190% !important;
+        height: 120% !important;
+        background-color: #001f3f00 !important;
+    }
+}
+
+@media (max-width:380px) {
+
+    /*==== start the response of Home Page  ====*/
+    /*==navbar==*/
+    .navbar .btn-register {
+        width: 40%;
+    }
+
+    .navbar .btn-login {
+        width: 30%;
+        margin-left: 2rem;
+        margin-right: 0rem;
+
+    }
+
+    /*==header==*/
+    .header_content h1 {
+        font-size: 1.7rem;
+        padding-bottom: 1rem;
+    }
+
+    .header_content h4 {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .header_content p {
+        text-align: right !important;
+        font-size: 1rem;
+        font-weight: 00;
+    }
+
+    /*=== owner===*/
+    .serves h4 {
+        color: #fff;
+        font-size: 1.6rem;
+        padding-bottom: 2rem;
+    }
+
+    .owneer .owner_slider .owner_card p {
+        color: #fff;
+        font-weight: 500;
+        font-size: 1rem;
+        margin-right: 0 !important;
+    }
+
+    .owner .fa-magnifying-glass {
+        right: 2rem;
+        top: 8.1rem;
+    }
+
+    /*=== serves===*/
+
+    .serves .serves_num p a {
+        margin-right: 6rem;
+    }
+
+    /*========= Start in Add Address Page Style =========*/
+    .address {
+        min-height: 86.7vh;
+    }
+
+    /*========= End in Add Address Page Style =========*/
+    /*========= start in Add owner Page Style =========*/
+    .dropdown-menu.show {
+        top: calc(100% - 17rem) !important;
+        text-align: right !important;
+        position: relative;
+        right: calc(100% - 23rem) !important;
+    }
+
+    /*========= End in Add owner Page Style =========*/
+    .contact {
+        /* height: 100vh; */
+        padding-top: 1rem;
+    }
+
+    .contact .contact_form .form-control {
+        height: 6vh;
+    }
+
+    .contact .contact_form textarea {
+        height: 12vh !important;
+    }
+
+    .contact .contact_form .form-label {
+        font-size: 1rem;
+        font-weight: 500;
+        margin-right: .5rem;
+        color: #fff;
+    }
+
+    /*========= End in Contact us Page Style =========*/
+    .forg {
+        margin-right: 0rem !important;
+    }
+    .search_house .contact_form{
+        margin-top: 3.6rem;
+    }
+    /*========= Start in Add New Owner Page Style =========*/
+    .address .search input.form-control {
+        height: 6vh;
+        font-size: 1.1rem;
+        color: #fff;
+    }
+
+    /*========= End in Add New Owner Page Style =========*/
+    /*========= Start in Add house Page Style =========*/
+
+    .add_house .dropdown-menu {
+        right: -2.7rem !important;
+        width: 20% !important;
+    }
+    .contact.register{
+        height: 120vh !important;
+    }
+    /*========= End in Add house Page Style =========*/
+
+}

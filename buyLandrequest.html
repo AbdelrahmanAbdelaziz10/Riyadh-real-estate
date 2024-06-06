@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/respons.css">
+    <title>عقارات الرياض</title>
+
+
+</head>
+
+<body class=" ">
+    <!--Start In Nav Bar Section-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-2">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="image/logo.png" alt="عقارات الرياض">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " href="personalProfile.html">الملف الشخصي</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="owener.html">الملاك والكيانات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./serves.html">خدماتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">تواصل معنا</a>
+                    </li>
+
+
+                </ul>
+                <div class="row d-block log_register me-4" role="search">
+                    <a href="login.html" class="btn btn-login mb-2" type="submit">تسجيل الدخول</a>
+                    <a href="register.html" class="btn btn-register" type="submit">انشاء حساب جديد</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--End In Nav Bar Section-->
+    <div class="line"></div>
+
+    <!--Start In edit Section-->
+    <section class="address owner add_house py-3">
+        <div class="container">
+            <div class="row justify-content-between mb-3 profile_header">
+                <div class="col-12">
+                    <h3 class="text-center add_owner mt-2 mb-3">
+                        اضافة ارض معروضة
+                    </h3>
+                </div>
+                <div class="col-lg-2 col-md-3 div_header_img">
+                    <div class="profile_head">
+                        <h5>بيانات الارض</h5>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 row div_header_btn">
+                    <div class="col-lg-6 col-md-6 div_save">
+                        <button class="btn btn_save">
+                            حفظ
+                        </button>
+                    </div>
+                    <div class="col-lg-6 col-md-6  div_save">
+                        <button class="btn btn_delete" disabled>
+                            حذف
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row my-3">
+                <div class="search col-lg-12 col-md-12 mb-3  ">
+                    <label for="exampleFormControlTextarea1" class="form-label">
+                        الوصف
+                    </label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+                        placeholder="اكتب نبذة عن ..."></textarea>
+                </div>
+                <div class="row col-lg-12 type">
+                    <div class="col-lg-3 col-md-3 row mb-3 dropdown_small">
+                        <label for="city" class="form-label">
+                            الفئة*
+                        </label>
+                        <div class="search col-lg-12 col-md-11 mb-3">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" id="cityDropdownButton" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    اختر الفئة
+                                    <i class="fa-solid fa-caret-down me-md-2"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="cityDropdownButton">
+                                    <li>
+                                        <p class="dropdown-item" onclick="selectOption('الرياض', 'city')">الرياض</p>
+                                    </li>
+                                    <li>
+                                        <p class="dropdown-item" onclick="selectOption('جدة', 'city')">جدة</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 row mb-3 dropdown_small">
+                        <label for="pet" class="form-label">
+                            الحدود*
+                        </label>
+                        <div class="search col-lg-12 col-md-11 mb-3">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" id="petDropdownButton" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    اختر الحدود
+                                    <i class="fa-solid fa-caret-down me-md-2"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="petDropdownButton">
+                                    <li>
+                                        <p class="dropdown-item" onclick="selectOption('كلب', 'pet')">الحي ال4</p>
+                                    </li>
+                                    <li>
+                                        <p class="dropdown-item" onclick="selectOption('قطة', 'pet')">الحي ال5</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 row mb-3 dropdown_small">
+                        <label for="pet" class="form-label">
+                            الاحياء*
+                        </label>
+                        <div class="search col-lg-12 col-md-11 mb-3">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" id="petDropdownButton" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    اختر الحي
+                                    <i class="fa-solid fa-caret-down me-lg-3 me-md-2"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="petDropdownButton">
+                                    <li>
+                                        <p class="dropdown-item" onclick="selectOption('كلب', 'pet')">الحي ال4</p>
+                                    </li>
+                                    <li>
+                                        <p class="dropdown-item" onclick="selectOption('قطة', 'pet')">الحي ال5</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 row mb-3 dropdown_small">
+                        <label for="gender" class="form-label">
+                            المنطقة*
+                        </label>
+                        <div class="search col-lg-12 col-md-11 mb-3">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" id="genderDropdownButton"
+                                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    اختر المنطقة
+                                    <i class="fa-solid fa-caret-down me-md-2"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="genderDropdownButton">
+                                    <li>
+                                        <p class="dropdown-item" onclick="selectOption('ذكر', 'gender')">ذكر</p>
+                                    </li>
+                                    <li>
+                                        <p class="dropdown-item" onclick="selectOption('انثى', 'gender')">انثى</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 row mb-3 type2">
+                    <div class="search col-lg-2 col-md-3 mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">
+                            سعر المتر
+                        </label>
+                        <input type="number" class="form-control pe-3" id="exampleFormControlInput1"
+                            placeholder=" سعر المتر">
+                    </div>
+                    <div class="search col-lg-2 col-md-3 mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">
+                            السعر الاجمالي
+                        </label>
+                        <input type="number" class="form-control pe-3" id="exampleFormControlInput1"
+                            placeholder=" السعر الاجمالي">
+                    </div>
+                    <div class="search col-lg-2 col-md-3 mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">
+                            المساحة
+                        </label>
+                        <input type="number" class="form-control pe-3" id="exampleFormControlInput1" placeholder="من">
+                    </div>
+                    <div class="search col-lg-2 col-md-3 mb-3 ">
+                        <!-- <label for="exampleFormControlTextarea1" class="form-label"> -->
+                        <!--  -->
+                        <!-- </label> -->
+                        <input type="number" class="form-control from_to pe-3" id="exampleFormControlInput1"
+                            placeholder="الي">
+                    </div>
+                    <div class="search col-lg-2 col-md-3 mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">
+                            رقم المخطط
+                        </label>
+                        <input type="number" class="form-control pe-3" id="exampleFormControlInput1"
+                            placeholder="رقم المخطط">
+                    </div>
+                </div>
+                <p class="user_information">
+                    بيانات العميل
+                </p>
+                <div class="col-12 row">
+                    <div class="col-lg-3 col-md-4 row mb-3 naionality_dropdown">
+                        <label for="gender" class="form-label">
+                            الاسم
+                        </label>
+                        <div class="search col-lg-12 col-md-12 mb-3">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" id="genderDropdownButton"
+                                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    اختر المالك
+                                    <i class="fa-solid fa-caret-down me-2"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="genderDropdownButton">
+                                    <li>
+                                        <p class="dropdown-item" onclick="selectOption('المالك الاول', 'gender')">المالك
+                                            الاول</p>
+                                    </li>
+                                    <li>
+                                        <p class="dropdown-item" onclick="selectOption('المالك الثاني', 'gender')">
+                                            المالك الثاني</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 row mb-3 naionality_dropdown">
+                        <label for="gender" class="form-label">
+                            الجنسية
+                        </label>
+                        <div class="search col-lg-12 col-md-12 mb-3">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" id="genderDropdownButton"
+                                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    اختر الجنسية
+                                    <i class="fa-solid fa-caret-down me-2"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="genderDropdownButton">
+                                    <li>
+                                        <p class="dropdown-item" onclick="selectOption('ذكر', 'gender')">ذكر</p>
+                                    </li>
+                                    <li>
+                                        <p class="dropdown-item" onclick="selectOption('انثى', 'gender')">انثى</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row col-12 type2">
+                    <div class="search col-lg-3 col-md-3 mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">
+                            رقم الجوال*
+                        </label>
+                        <input type="number" class="form-control" id="exampleFormControlInput1"
+                            placeholder=" ادخل رقم الجوال">
+                    </div>
+                    <div class="search col-lg-3 col-md-3 mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">
+                            رقم الواتساب*
+                        </label>
+                        <input type="number" class="form-control" id="exampleFormControlInput1"
+                            placeholder=" ادخل رقم الجوال">
+                    </div>
+                    <div class="search col-lg-3 col-md-3 mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">
+                            رقم الهوية*
+                        </label>
+                        <input type="number" class="form-control" id="exampleFormControlInput1"
+                            placeholder="رقم الهوية">
+                    </div>
+                    <div class="search col-lg-3 col-md-3 mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">
+                            نسبة التملك*
+                        </label>
+                        <input type="number" class="form-control" id="exampleFormControlInput1"
+                            placeholder=" نسبة التملك">
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="row mt-md-4 justify-content-center">
+                <div class="col-2 text-center ">
+                    <button class="btn btn_addhouse">
+                        حفظ
+                    </button>
+                </div>
+                <div class=" col-2 text-center">
+                    <button class="btn btn_deletehouse">
+                        حذف
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End In edit Section-->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="Js/wow.min.js"></script>
+    <script src="Js/popper.min.js"></script>
+    <script src="Js/bootstrap.min.js"></script>
+    <script src="Js/main.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        function selectOption(option, dropdownId) {
+            document.getElementById(dropdownId + 'DropdownButton').innerText = option;
+        }
+    </script>
+
+
+</body>
+
+</html>

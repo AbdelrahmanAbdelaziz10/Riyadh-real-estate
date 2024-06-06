@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/respons.css">
+
+    <title>عقارات الرياض</title>
+
+</head>
+
+<body class="servies">
+    <!--Start In Nav Bar Section-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-2">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="image/logo.png" alt="عقارات الرياض">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">الملف الشخصي</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="owener.html">الملاك والكيانات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./serves.html">خدماتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">تواصل معنا</a>
+                    </li>
+                </ul>
+                <div class="row d-block log_register me-lg-4 me-md-4" role="search">
+                    <button class="btn btn-login mb-2" type="submit">تسجيل الدخول</button>
+                    <button class="btn btn-register" type="submit">انشاء حساب جديد</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--End In Nav Bar Section-->
+    <div class="line"></div>
+    <!--Start In serves Section-->
+    <section class="contact register" >
+        <div class="background">
+            <img src="image/background1.jpeg" alt="" >
+            </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-md-10 col-sm-11 ">
+                    <form class="contact_form row">
+                        <div class="contact_text">
+                            <h3 class="text-center mb-3">انشاء حساب جديد</h3>
+                        </div>
+                        <div class="col-lg-6 col-md-6 mb-2">
+                            <label for="exampleFormControlInput1" class="form-label">الاسم الاول </label>
+                            <input type="text" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp"  placeholder="الاسم الاول">
+                        </div>
+                        <div class="col-lg-6 col-md-6 mb-2">
+                            <label for="exampleFormControlInput1" class="form-label">الاسم الاخير</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="الاسم الاخير">
+                        </div>
+                        <div class="mb-2 col-lg-12 col-md-12">
+                            <label for="exampleFormControlInput1" class="form-label">
+                                رقم الجوال
+                            </label>
+                            <input type="number" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder=" +201000000050">
+                        </div>
+                        <div class="mb-2 col-lg-12 col-md-12">
+                            <label for="exampleFormControlInput1" class="form-label">البريد الالكتروني</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="email@gamil.com">
+                        </div>
+                        <div class="mb-2 col-lg-12 col-md-12">
+                            <label for="exampleFormControlInput1" class="form-label">كلمة المرور </label>
+                            <input type="password" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="******** **********" >
+                        </div>
+                        <div class="mb-2 col-lg-12 col-md-12">
+                            <label for="exampleFormControlInput1" class="form-label">تاكيد كلمة المرور </label>
+                            <input type="password" class="form-control" id="exampleInputEmail1" placeholder="******** **********"
+                                aria-describedby="emailHelp" >
+                        </div>
+                        <div class="mb-4 col-lg-12 col-md-12 row justify-content-center">
+                            <button type="submit" class="btn btn_submit">تسجيل</button>
+                        </div>
+                            <p class="text-center have_acount">
+                                لدي حساب بالفعل <a href="login.html">تسجيل الدخول!</a>
+                            </p>
+                    </form>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </section>
+    <!--End In serves Section-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="Js/wow.min.js"></script>
+    <script src="Js/popper.min.js"></script>
+    <script src="Js/bootstrap.min.js"></script>
+    <script src="Js/main.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () { 
+            // Get the height of the content
+            const contentHeight = document.querySelector('.contact_form').offsetHeight;
+            
+            // Get the viewport width
+            const viewportWidth = window.innerWidth;
+            
+            // Set the height of the contact section based on the viewport width
+            const contactSection = document.querySelector('.contact');
+            
+            if (viewportWidth <= 576) { // Mobile screens
+                contactSection.style.height = `${contentHeight + 3 * 16}px`; // 5rem converted to pixels (1rem = 16px)
+            } else { // Desktop screens
+                contactSection.style.height = `${contentHeight + 4 * 16}px`; // 4rem converted to pixels (1rem = 16px)
+            }
+        });
+    </script>
+</body>
+
+</html>
